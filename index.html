@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="uz" class="dark scroll-behavior-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mening Portfoliom va Xizmatlarim</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-100 transition-colors duration-300 font-sans">
+
+    <!-- NAVIGATSIYA -->
+    <nav class="sticky top-0 z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold bg-gradient-to-r from-blue-500 to-indigo-600 bg-clip-text text-transparent">DevPortfolio</a>
+            
+            <div class="flex items-center gap-6">
+                <a href="#about" class="text-sm font-medium hover:text-blue-500 transition-colors">Men haqimda</a>
+                <a href="#services" class="text-sm font-medium hover:text-blue-500 transition-colors">Xizmatlar</a>
+                <a href="#pricing" class="text-sm font-medium hover:text-blue-500 transition-colors">Narxlar</a>
+                
+                <!-- Dark Mode Toggle -->
+                <button id="theme-toggle" class="p-2 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-amber-400 hover:scale-105 transition-transform">
+                    <i id="theme-icon" class="fas fa-sun text-lg"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION (ASOSIY QISM) -->
+    <section id="about" class="max-w-5xl mx-auto px-4 py-20 flex flex-col md:flex-row items-center gap-12">
+        <div class="flex-1 space-y-6 text-center md:text-left">
+            <span class="px-3 py-1 text-xs font-semibold uppercase tracking-wider text-blue-600 bg-blue-100 dark:bg-blue-900/30 dark:text-blue-400 rounded-full">Frontend Dasturchi</span>
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">
+                Salom, Men <span class="text-blue-600 dark:text-indigo-400">Dasturchiman</span>
+            </h1>
+            <p class="text-lg text-slate-500 dark:text-slate-400 max-w-xl mx-auto md:mx-0 leading-relaxed">
+                Men Figma dizaynlaringizni mukammal, tezkor va moslashuvchan (responsive) veb-saytlarga aylantirib beraman. Ishimda eng zamonaviy texnologiyalardan foydalanaman.
+            </p>
+            <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                <a href="#pricing" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-xl shadow-lg transition-all transform hover:-translate-y-0.5">Xizmatlarga buyurtma berish</a>
+                <a href="https://t.me/@nerocealset" target="_blank" class="px-6 py-3 bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 font-medium rounded-xl transition-all flex items-center gap-2">
+                    <i class="fab fa-telegram text-xl text-[#24A1DE]"></i> Telegramdan yozish
+                </a>
+            </div>
+        </div>
+        
+        <div class="relative">
+            <div class="w-64 h-64 md:w-80 md:h-80 rounded-3xl bg-gradient-to-tr from-blue-500 to-indigo-600 p-1.5 shadow-2xl">
+                <div class="w-full h-full bg-white dark:bg-slate-800 rounded-[22px] flex items-center justify-center overflow-hidden">
+                    <i class="fas fa-code text-7xl text-slate-300 dark:text-slate-600 animate-pulse"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION (NIMALAR QILA OLAMAN) -->
+    <section id="services" class="bg-slate-100 dark:bg-slate-950/40 py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold mb-4">Men nimalar qila olaman?</h2>
+                <p class="text-slate-500 dark:text-slate-400">Sizning biznesingiz yoki shaxsiy brendingiz uchun professional raqamli yechimlar.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Xizmat 1 -->
+                <div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm border border-slate-200/50 dark:border-slate-700/30 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-600 dark:text-blue-400 flex items-center justify-center text-2xl mb-6">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Veb-sayt Mukammal Verstyovka</h3>
+                    <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Figma yoki boshqa dizaynlarni Tailwind CSS yordamida har qanday ekran (telefon, planshet) uchun moslashuvchan qilib kodga o'tkazish.</p>
+                </div>
+                
+                <!-- Xizmat 2 -->
+                <div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm border border-slate-200/50 dark:border-slate-700/30 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 flex items-center justify-center text-2xl mb-6">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Interaktiv Funksiyalar</h3>
+                    <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">JavaScript orqali saytga jon bag'ishlash: Dark Mode tizimi, murakkab filtrlashlar, hisob-kitob kalkulyatorlari va dinamik elementlar.</p>
+                </div>
+
+                <!-- Xizmat 3 -->
+                <div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm border border-slate-200/50 dark:border-slate-700/30 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-2xl mb-6">
+                        <i class="fas fa-search-dollar"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">SEO va Tezlikni Optimallashtirish</h3>
+                    <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Saytingizni Google qidiruv tizimida chiqishi uchun tayyorlash (SEO) va brauzerda bir zumda yuklanadigan darajada tezlashtirish.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING SECTION (TARIFLAR VA NARXLAR) -->
+    <section id="pricing" class="max-w-6xl mx-auto px-4 py-20">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold mb-4">Xizmat ko'rsatish tariflari</h2>
+            <p class="text-slate-500 dark:text-slate-400">Loyihangiz hajmi va talablariga mos keladigan tarifni tanlang.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+            
+            <!-- Tarif 1: Start -->
+            <div class="bg-white dark:bg-slate-800 p-8 rounded-3xl border border-slate-200 dark:border-slate-700/60 flex flex-col justify-between shadow-sm relative">
+                <div>
+                    <h3 class="text-lg font-bold mb-2">Start (Vizitka / Landing)</h3>
+                    <p class="text-xs text-slate-400 mb-6">Oddiy va ixcham bir sahifali saytlar uchun</p>
+                    <div class="flex items-baseline gap-1 mb-6">
+                        <span class="text-4xl font-extrabold">$20</span>
+                        <span class="text-sm text-slate-400">dan boshlab</span>
+                    </div>
+                    <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-300 mb-8">
+                        <li><i class="fas fa-check text-emerald-500 mr-2"></i> 1 sahifali Landing Page</li>
+                        <li><i class="fas fa-check text-emerald-500 mr-2"></i> To'liq mobil moslashuvchanlik</li>
+                        <li><i class="fas fa-check text-emerald-500 mr-2"></i> Tailwind CSS & HTML</li>
+                        <li><i class="fas fa-check text-emerald-500 mr-2"></i> Telegram tugmalari integratsiyasi</li>
+                    </ul>
+                </div>
+                <a href="https://t.me/@nerocealset?text=Salom,%20Start%20tarif%20bo'yicha%20buyurtma%20bermoqchiman" target="_blank" class="w-full py-3 bg-slate-100 dark:bg-slate-700 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 rounded-xl font-medium transition-all text-center block">Buyurtma berish</a>
+            </div>
+
+            <!-- Tarif 2: Standart (Mashhur) -->
+            <div class="bg-white dark:bg-slate-800 p-8 rounded-3xl border-2 border-blue-500 dark:border-indigo-500 flex flex-col justify-between shadow-xl relative transform md:-translate-y-2">
+                <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-blue-500 text-white text-xs px-3 py-1 rounded-full font-semibold uppercase tracking-wider">Eng ommabop</span>
+                <div>
+                    <h3 class="text-lg font-bold mb-2">Standart (Biznes sayt)</h3>
+                    <p class="text-xs text-slate-400 mb-6">Kichik biznes va kengaytirilgan portfoliolar uchun</p>
+                    <div class="flex items-baseline gap-1 mb-6">
+                        <span class="text-4xl font-extrabold">$100</span>
+                        <span class="text-sm text-slate-400">dan boshlab</span>
+                    </div>
+                    <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-300 mb-8">
+                        <li><i class="fas fa-check text-blue-500 mr-2"></i> 3-5 sahifagacha bo'lgan veb-sayt</li>
+                        <li><i class="fas fa-check text-blue-500 mr-2"></i> Dark Mode (Tungi rejim) funksiyasi</li>
+                        <li><i class="fas fa-check text-blue-500 mr-2"></i> JavaScript interaktiv elementlar</li>
+                        <li><i class="fas fa-check text-blue-500 mr-2"></i> Boshlang'ich SEO sozlamalari</li>
+                    </ul>
+                </div>
+                <a href="https://t.me/@nerocealset?text=Salom,%20Standart%20tarif%20bo'yicha%20buyurtma%20bermoqchiman" target="_blank" class="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-medium transition-all text-center block shadow-md shadow-blue-500/20">Buyurtma berish</a>
+            </div>
+
+            <!-- Tarif 3: Premium -->
+            <div class="bg-white dark:bg-slate-800 p-8 rounded-3xl border border-slate-200 dark:border-slate-700/60 flex flex-col justify-between shadow-sm relative">
+                <div>
+                    <h3 class="text-lg font-bold mb-2">Premium (Murakkab Tizim)</h3>
+                    <p class="text-xs text-slate-400 mb-6">Katta loyihalar va murakkab web dasturlar uchun</p>
+                    <div class="flex items-baseline gap-1 mb-6">
+                        <span class="text-4xl font-extrabold">$300</span>
+                        <span class="text-sm text-slate-400">gacha</span>
+                    </div>
+                    <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-300 mb-8">
+                        <li><i class="fas fa-check text-emerald-500 mr-2"></i> Cheksiz sahifalar va murakkab struktura</li>
+                        <li><i class="fas fa-check text-emerald-500 mr-2"></i> Figma dizaynga 100% aniqlikda moslik</li>
+                        <li><i class="fas fa-check text-emerald-500 mr-2"></i> API va formalar integratsiyasi</li>
+                        <li><i class="fas fa-check text-emerald-500 mr-2"></i> Google Search Console & To'liq SEO</li>
+                    </ul>
+                </div>
+                <a href="https://t.me/@nerocealset?text=Salom,%20Premium%20tarif%20bo'yicha%20buyurtma%20bermoqchiman" target="_blank" class="w-full py-3 bg-slate-100 dark:bg-slate-700 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 rounded-xl font-medium transition-all text-center block">Buyurtma berish</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-200 dark:border-slate-800 py-8 bg-white dark:bg-slate-950 text-center text-sm text-slate-500">
+        <p>&copy; 2026 Barcha huquqlar himoyalangan. Dasturchi vizitkasi.</p>
+    </footer>
+
+    <!-- JAVASCRIPT - DARK MODE -->
+    <script>
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const htmlElement = document.documentElement;
+
+        // Boshlang'ich belgini tekshirish
+        if (htmlElement.classList.contains('dark')) {
+            themeIcon.classList.replace('fa-moon', 'fa-sun');
+        } else {
+            themeIcon.classList.replace('fa-sun', 'fa-moon');
+        }
+
+        // Almashish hodisasi
+        themeToggleBtn.addEventListener('click', () => {
+            if (htmlElement.classList.contains('dark')) {
+                htmlElement.classList.remove('dark');
+                themeIcon.classList.replace('fa-sun', 'fa-moon');
+            } else {
+                htmlElement.classList.add('dark');
+                themeIcon.classList.replace('fa-moon', 'fa-sun');
+            }
+        });
+    </script>
+</body>
+</html>
